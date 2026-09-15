@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <title>Green Book — Video</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background: #000;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 24px 14px;
+    }
+    main {
+      width: min(100%, 900px);
+      text-align: center;
+    }
+    h1 {
+      margin: 0 0 18px;
+      font-size: clamp(22px, 5vw, 34px);
+      font-weight: 600;
+    }
+    .player {
+      width: 100%;
+      overflow: hidden;
+      border-radius: 14px;
+      background: #111;
+      box-shadow: 0 8px 35px rgba(0,0,0,.55);
+    }
+    video {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 80vh;
+      background: #000;
+    }
+    p {
+      margin: 16px 0 0;
+      color: #aaa;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Green Book</h1>
+    <div class="player">
+      <video controls playsinline preload="metadata">
+        <source src="Green%20Book.mp4" type="video/mp4">
+        Tu navegador no puede reproducir este video.
+      </video>
+    </div>
+    <p>Toca ▶ para reproducir</p>
+  </main>
+</body>
+</html>
